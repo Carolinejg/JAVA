@@ -15,8 +15,8 @@ public class Exercicio2 {
 		raio=sc.nextDouble();
 		area=pi*((raio)*(raio));
 		
-		System.out.println("Área= %.2f%n"+area);
-		 sc.close();
+		System.out.printf("Área=%.4f%n",area);
+		sc.close();
 		
 
 	}
