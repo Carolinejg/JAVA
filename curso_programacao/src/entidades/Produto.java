@@ -6,11 +6,21 @@ public class Produto {
 	public double price;
 	public int quantity;
 	
+	public Produto() {//construtor padrão
+		
+	}
 	public Produto(String name, double price, int quantity)
 	{
 		this.name=name;
 		this.price=price;
 		this.quantity=quantity;
+	}
+	
+	public Produto(String name, double price)
+	{
+		this.name=name;
+		this.price=price;
+		
 	}
 	
 	public double totalValueInStock() 
