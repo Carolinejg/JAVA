@@ -2,9 +2,9 @@ package entidades;
 
 public class Produto {
 
-	public String name;
-	public double price;
-	public int quantity;
+	private String name;
+	private double price;
+	private int quantity;
 	
 	public Produto() {//construtor padrão
 		
@@ -16,11 +16,24 @@ public class Produto {
 		this.quantity=quantity;
 	}
 	
-	public Produto(String name, double price)
-	{
-		this.name=name;
-		this.price=price;
-		
+	public Produto(String name, double price) {
+		this.name = name;
+		this.price = price;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	public int getQuantity() {
+		return quantity;
 	}
 	
 	public double totalValueInStock() 
